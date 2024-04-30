@@ -1,0 +1,39 @@
+<html>
+<head>
+<title>guess_the_number_1to10.py</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #ed864a;}
+.s1 { color: #ebebeb;}
+.s2 { color: #7ec3e6;}
+.s3 { color: #33ccff; font-weight: bold;}
+.s4 { color: #ed864a; font-weight: bold;}
+.s5 { color: #54b33e;}
+.ln { color: #999999; font-weight: normal; font-style: normal; }
+</style>
+</head>
+<body bgcolor="#131314">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+guess_the_number_1to10.py</font>
+</center></td></tr></table>
+<pre><a name="l1"><span class="ln">1    </span></a><span class="s0">from </span><span class="s1">random </span><span class="s0">import </span><span class="s1">randint</span>
+<a name="l2"><span class="ln">2    </span></a>
+<a name="l3"><span class="ln">3    </span></a><span class="s2"># Generate a random number:</span>
+<a name="l4"><span class="ln">4    </span></a><span class="s1">rand_number = randint(</span><span class="s3">1</span><span class="s4">,</span><span class="s3">10</span><span class="s1">)</span>
+<a name="l5"><span class="ln">5    </span></a>
+<a name="l6"><span class="ln">6    </span></a><span class="s2">#repeat code until correct number is guessed</span>
+<a name="l7"><span class="ln">7    </span></a>
+<a name="l8"><span class="ln">8    </span></a><span class="s0">while True</span><span class="s1">:</span>
+<a name="l9"><span class="ln">9    </span></a>    <span class="s1">number = int(input(</span><span class="s5">&quot;Input your number from 1 to 10: &quot;</span><span class="s1">))</span>
+<a name="l10"><span class="ln">10   </span></a>
+<a name="l11"><span class="ln">11   </span></a>    <span class="s0">if </span><span class="s1">rand_number &lt; number:</span>
+<a name="l12"><span class="ln">12   </span></a>        <span class="s1">print(</span><span class="s5">&quot; Try again, too high&quot;</span><span class="s1">)</span>
+<a name="l13"><span class="ln">13   </span></a>    <span class="s0">elif </span><span class="s1">rand_number &gt; number:</span>
+<a name="l14"><span class="ln">14   </span></a>        <span class="s1">print (</span><span class="s5">&quot;Try again, too low!&quot;</span><span class="s1">)</span>
+<a name="l15"><span class="ln">15   </span></a>    <span class="s0">else</span><span class="s1">:</span>
+<a name="l16"><span class="ln">16   </span></a>        <span class="s1">print(</span><span class="s5">&quot;Correct, you guessed the number&quot;</span><span class="s1">)</span>
+<a name="l17"><span class="ln">17   </span></a>        <span class="s0">break</span></pre>
+</body>
+</html>
